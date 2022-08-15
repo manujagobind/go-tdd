@@ -15,7 +15,7 @@ func slowWebsiteChecker(_ string) bool {
 	return true
 }
 
-func TestCheeckWebsites(t *testing.T) {
+func TestCheckWebsites(t *testing.T) {
 	websites := []string{
 		"http://google.com",
 		"http://blog.gypsydave5.com",

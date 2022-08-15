@@ -25,3 +25,11 @@ Go!`
 		t.Errorf("not enough calls to sleeper, want 3 got %d", spySleeper.Calls)
 	}
 }
+
+type SpySleeper struct {
+	Calls int
+}
+
+func (s *SpySleeper) Sleep() {
+	s.Calls++
+}
